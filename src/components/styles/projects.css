@@ -1,0 +1,16 @@
+.project-description{
+    margin-top:2%;
+    width:20%;
+    margin-left:40%;
+    text-align:left;
+    margin-bottom:2%;
+}
+video:hover{
+    transform:scale(2.5);
+}
+.projects ul{
+    list-style: none;
+}
+.projects ul li{
+    display:inline-block;
+}
