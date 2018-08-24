@@ -1,0 +1,10 @@
+.skills{
+    margin-top:5%;
+}
+.skills .skills-list{
+    list-style: none;
+}
+.skills-list li{
+    display:inline-block;
+    margin:0 2% 0 2%;
+}
