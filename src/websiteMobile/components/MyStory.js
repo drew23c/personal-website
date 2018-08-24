@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 
 
-export default class MyStory extends Component{
+export default class StoryScreen extends Component{
     render(){
         return(
             <View>

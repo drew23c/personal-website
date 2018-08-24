@@ -1,55 +1,68 @@
 import React, { Component } from 'react';
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
-import {createStackNavigator} from 'react-navigation';
-import {View, Text, StyleSheet} from 'react-native';
-// import MyStory from './components/MyStory';
-// import Skills from './components/Skills';
-// import Projects from './components/Projects';
-// import HomeScreen from './components/Home'
+import { Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body } from 'native-base';
+import {createStackNavigator, SafeAreaView, createMaterialTopTabNavigator } from 'react-navigation';
+import {View, Text, StyleSheet, Button} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import StoryScreen from './components/MyStory';
+import SkillsScreen from './components/Skills';
+import ProjectsScreen from './components/Projects';
+import HomeScreen from './components/Home'
 
-// const RootStack = createStackNavigator({
-//   Home:HomeScreen,
-//   MyStory:MyStory,
-//   Projects:Projects,
-//   Skills:Skills
-// },{
-//   initialRouteName:'Home'
-// })
+
 
 export default class App extends Component{
-  async componentWillMount() {
-    await Expo.Font.loadAsync({
-      'Roboto': require('native-base/Fonts/Roboto.ttf'),
-      'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
-    });
-  }
   render(){
-    return(
-      <Container>
-        <Header>
-          <Left>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Left>
-          <Body>
-            <Title>Home</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content>
-          <Text>
-            This is Home
-          </Text>
-        </Content>
-        <Footer>
-          <FooterTab>
-            <Button full>
-              <Text>Footer</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
-      </Container>
-    )
+    return <RouteStack/>
   }
 }
+
+const RouteStack = createMaterialTopTabNavigator({
+  Home:{
+    screen: HomeScreen,
+    navigationOptions:{
+      tabBarLabel:'Home',
+      tabBarIcon:({tintColor}) =>(
+        <Icon name="android-home" color={tintColor} size={24} />
+      )
+    }
+  },
+  MyStory:{
+    screen: StoryScreen,
+    navigationOptions:{
+      tabBarLabel:'My Story',
+      tabBarIcon:({tintColor}) =>(
+        <Icon name="android-home" color={tintColor} size={24} />
+      )
+    }
+  },
+  Projects:{
+    screen: ProjectsScreen,
+    navigationOptions:{
+      tabBarLabel:'Projects',
+      tabBarIcon:({tintColor}) =>(
+        <Icon name="android-home" color={tintColor} size={24} />
+      )
+    }
+  },
+  Skills:{
+    screen: SkillsScreen,
+    navigationOptions:{
+      tabBarLabel:'Skills',
+      tabBarIcon:({tintColor}) =>(
+        <Icon name="android-home" color={tintColor} size={24} />
+      )
+    }
+  }   
+},{
+  initialRouteName: 'Home',
+  order:['Home', 'MyStory', 'Projects', 'Skills'],
+  activeTintColor:'blue'
+})
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center'
+  }
+})

@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
-import {View, Text, StyleSheet} from 'react-native';
-import {createStackNavigator} from 'react-navigation';
+import { Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body, Icon } from 'native-base';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
 
 export default class HomeScreen extends Component{
+    static navigationOptions = {
+        header: null
+    }
     render(){
         return(
-            <View>
-                <Text onPress={()=>this.props.navigation.navigate('Home')}>Home Screen</Text>
-                <Text onPress={()=>this.props.navigation.navigate('MyStory')}>My Story</Text>
-                <Text onPress={()=>this.props.navigation.navigate('Projects')}>Projects</Text>
-                <Text onPress={()=>this.props.navigation.navigate('Skills')}>Skills</Text>
+            <View style={styles.container}>
+                <Button 
+                    title="Go to my story"
+                    onPress={() => this.props.navigation.navigate('MyStory')}
+                />
             </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container:{
+      flex:1,
+      alignItems:'center',
+      justifyContent:'center'
+    }
+  })

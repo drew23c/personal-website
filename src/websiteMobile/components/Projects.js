@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 
 
-export default class Projects extends Component{
+export default class ProjectsScreen extends Component{
     render(){
         return(
             <View>
