@@ -8,7 +8,8 @@ export default class StoryScreen extends Component{
         return(
             <View style={styles.storyStyle}>
                 <View style={{flex:2}}>
-                    <Text>This has undoubtedly been the most exciting time for me as someone 
+                    <Text style={styles.titleSize}>My Story</Text>
+                    <Text style={styles.margin}>This has undoubtedly been the most exciting time for me as someone 
                         who loves technology. Working as tech support, I wanted to 
                         do something more then entry level work but I became complacent. It wasn't until a motivating conversation with my
                         co-worker that pushed us both to become better in the tech industry. 
@@ -30,5 +31,12 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems:'center',
         justifyContent:'center'
+    },
+    titleSize:{
+        fontSize:30,
+        textAlign:'center'
+    },
+    margin:{
+        marginLeft:10
     }
 })
