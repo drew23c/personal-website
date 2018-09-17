@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to="/"><h1 className="heading">Hi, My Name Is Andrew</h1></Link>
+        <Link to="/"><h1 className="heading">Andrew Caldwell</h1></Link>
         <div className="nav-container">
           <nav className="navigation">
             <a href={Resume} target="_blank">Resume</a>
