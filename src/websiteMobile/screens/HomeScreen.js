@@ -12,6 +12,9 @@ class HomeScreen extends Component{
                 <Button title="Story"
                 onPress={()=> this.props.navigation.navigate('Story')}
                 />
+                <Button title="Skills"
+                onPress={()=> this.props.navigation.navigate('Skills')}
+                />
             </View>
         )
     }
