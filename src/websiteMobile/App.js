@@ -3,8 +3,9 @@ import {View, Text, StyleSheet, Button} from 'react-native';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import StoryScreen from './screens/StoryScreen';
 import HomeScreen from './screens/HomeScreen';
+import SkillsScreen from './screens/SkillsScreen';
 
-class App extends Component{
+export default class App extends Component{
   render(){
     return(
       <AppNavigator/>
@@ -12,11 +13,18 @@ class App extends Component{
   }
 }
 
-const AppNavigator = createStackNavigator({
-  Home: HomeScreen,
-  Story: StoryScreen
-})
-
-
-
-export default App;
+const AppNavigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Story: StoryScreen,
+    Skills: SkillsScreen
+  },
+  { 
+    defaultNavigationOptions:{
+      headerTitleStyle:{
+        fontWeight:'bold'
+      },
+      headerTintColor:'blue'
+    }
+  }
+)
