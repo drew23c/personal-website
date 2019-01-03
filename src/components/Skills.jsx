@@ -60,7 +60,7 @@ class Skills extends Component{
                 <ul className="skills-list">
                 {this.skills.map(skill =>
                 <li>
-                    <img src={skill.source} alt={skill.title}/>
+                    <img src={skill.source} alt={skill.title} style={{height:100, width:100}} />
                     <p>{skill.title}</p>
                 </li>
                 )}
