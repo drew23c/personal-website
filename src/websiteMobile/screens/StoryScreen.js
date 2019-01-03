@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import backgroundImage from '../Image/code-coding-computer-574073.jpg'
 
 class StoryScreen extends Component{
     static navigationOptions = {
@@ -7,7 +8,7 @@ class StoryScreen extends Component{
     }
     render(){
         return(
-            <View style={styles.container}>
+            <ImageBackground source={backgroundImage} style={styles.container}>
                 <Text>
                     This has undoubtedly been the most exciting time for me as someone 
                     who loves technology. Working as tech support, I wanted to 
@@ -20,7 +21,7 @@ class StoryScreen extends Component{
                     when I knew that this is the career path I want to follow. Since then, 
                     my hunger to learn has never wavered.
                 </Text>
-            </View>
+            </ImageBackground>
         )
     }
 }
@@ -32,6 +33,9 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'flex-start',
+      marginTop:5,
+      width:'100%',
+      height:'100%'
     }
   })
 

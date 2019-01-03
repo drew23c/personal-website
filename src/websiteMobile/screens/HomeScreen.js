@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import Footer from '../components/Footer';
-
+import backgroundImage from '../Image/code-coding-computer-574073.jpg'
 
 class HomeScreen extends Component{
     static navigationOptions = {
@@ -9,20 +9,11 @@ class HomeScreen extends Component{
     }
     render(){
         return(
-            <View style={styles.container}>
-                <Text>Welcome</Text>
-                <Text>I'm a hungry full stack web developer looking for work.</Text>
-                <Button title="Story"
-                onPress={()=> this.props.navigation.navigate('Story')}
-                />
-                <Button title="Skills"
-                onPress={()=> this.props.navigation.navigate('Skills')}
-                />
-                <Button title="Projects"
-                onPress={()=> this.props.navigation.navigate('Projects')}
-                />
-                <Footer/>
-            </View>
+                <ImageBackground source={backgroundImage} style={styles.container}>
+                    <Text>Welcome</Text>
+                    <Text>I'm a hungry full stack web developer looking for work.</Text>
+                    <Footer/>
+                </ImageBackground>
         )
     }
 }
@@ -31,9 +22,12 @@ const styles = StyleSheet.create({
     container:{
       flex: 1,
       padding:26,
+      marginTop:5,
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'flex-start',
+      width:'100%',
+      height:'100%' 
     }
   })
 

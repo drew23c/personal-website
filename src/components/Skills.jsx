@@ -8,6 +8,8 @@ import postgres from '../icons/icons8-postgresql-128.png';
 import node from '../icons/if_node_3069651.png';
 import git from '../icons/if_git-square_1608905.png';
 import ubuntu from '../icons/if_Ubuntu_367643.png';
+import graphql from '../icons/graphql.jpeg';
+
 
 class Skills extends Component{
     constructor(){
@@ -36,6 +38,10 @@ class Skills extends Component{
             {
                 "title":'PostgreSQL',
                 "source": postgres,
+            },
+            {
+                "title":'GraphQL',
+                "source": graphql
             },
             {
                 "title":'Git',
