@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {View, Text, TouchableWithoutFeedback, Linking, StyleSheet, ImageBackground} from 'react-native';
 import chatter from '../videos/chatterbox.webm';
 import {Video} from 'expo';
-import backgroundImage from '../Image/code-coding-computer-574073.jpg'
+import backgroundImage from '../Image/code-coding-computer-574073.jpg';
+import Footer from '../components/Footer';
 
 class ProjectsScreen extends Component{
     static navigationOptions = {
@@ -34,6 +35,9 @@ class ProjectsScreen extends Component{
                     />
                     </TouchableWithoutFeedback>
                 </View>)}
+                <View style={styles.footerContainer} >
+                        <Footer/>
+                </View>
             </ImageBackground>
         )
     }
@@ -46,6 +50,10 @@ const styles = StyleSheet.create({
         marginTop:20,
         height:'100%',
         width:'100%'
+    },
+    footerContainer:{
+        flex:1,
+        alignItems:'center',
     }
 })
 export default ProjectsScreen;

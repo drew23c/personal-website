@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import backgroundImage from '../Image/code-coding-computer-574073.jpg'
+import Footer from '../components/Footer';
 
 class StoryScreen extends Component{
     static navigationOptions = {
@@ -21,6 +22,7 @@ class StoryScreen extends Component{
                     when I knew that this is the career path I want to follow. Since then, 
                     my hunger to learn has never wavered.
                 </Text>
+                <Footer/>
             </ImageBackground>
         )
     }
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
       padding:26,
       backgroundColor: '#fff',
       alignItems: 'center',
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
       marginTop:5,
       width:'100%',
       height:'100%'

@@ -10,13 +10,21 @@ import {FileSystem} from 'expo';
 class Footer extends Component{
     render(){
         return(
-            <View>
-                <TouchableWithoutFeedback onPress={()=> Linking.openURL("mailto:drewecaldwell@gmail.com")}><Image source={email} style={{height:30, width:30}} /></TouchableWithoutFeedback>
-                <TouchableWithoutFeedback onPress={()=> Linking.openURL("http://www.github.com/drew23c")}><Image source={github} style={{height:30, width:30}} /></TouchableWithoutFeedback>
-                <TouchableWithoutFeedback onPress={()=> Linking.openURL("http://www.linkedin.com/in/caldwellandrew")}><Image source={linkedin} style={{height:30, width:30}} /></TouchableWithoutFeedback>
-                <TouchableWithoutFeedback onPress={()=> Linking.openURL()}><Image source={resumeIcon} style={{height:30, width:30}} /></TouchableWithoutFeedback>
+            <View style={styles.container}>
+                <TouchableWithoutFeedback onPress={()=> Linking.openURL("mailto:drewecaldwell@gmail.com")}><Image source={email} style={{height:30, width:30, marginLeft:10}} /></TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress={()=> Linking.openURL("http://www.github.com/drew23c")}><Image source={github} style={{height:30, width:30, marginLeft:10}} /></TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress={()=> Linking.openURL("http://www.linkedin.com/in/caldwellandrew")}><Image source={linkedin} style={{height:30, width:30, marginLeft:10}} /></TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress={()=> Linking.openURL()}><Image source={resumeIcon} style={{height:30, width:30, marginLeft:10}} /></TouchableWithoutFeedback>
             </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        flexDirection:'row',
+        alignItems:'flex-end'
+    }
+})
 export default Footer;

@@ -11,7 +11,7 @@ import ubuntu from '../icons/if_Ubuntu_367643.png';
 import graphql from '../icons/graphql.jpeg';
 import {List} from 'react-native-elements';
 import backgroundImage from '../Image/code-coding-computer-574073.jpg'
-
+import Footer from '../components/Footer';
 
 class SkillsScreen extends Component{
     static navigationOptions = {
@@ -62,7 +62,7 @@ class SkillsScreen extends Component{
         return(
             <ImageBackground source={backgroundImage} style={styles.container}>
                 <List>
-                    <ScrollView>
+                    <ScrollView pinchGestureEnabled={true}>
                         {
                             this.skills.map(s=>
                                 <View style={styles.listContainer}>
@@ -71,6 +71,9 @@ class SkillsScreen extends Component{
                                 </View>    
                             )
                         }
+                    <View style={styles.footerContainer} >
+                        <Footer/>
+                    </View>
                     </ScrollView>
                 </List>
             </ImageBackground>
@@ -87,6 +90,10 @@ const styles = StyleSheet.create({
     },
     listContainer:{
         alignItems:'center'
+    },
+    footerContainer:{
+        flex:1,
+        alignItems:'center',
     }
 })
 export default SkillsScreen;

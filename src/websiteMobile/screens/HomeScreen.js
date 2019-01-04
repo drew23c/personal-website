@@ -10,7 +10,7 @@ class HomeScreen extends Component{
     render(){
         return(
                 <ImageBackground source={backgroundImage} style={styles.container}>
-                    <Text>Welcome</Text>
+                    <Text style={{fontWeight:'bold'}}>Welcome</Text>
                     <Text>I'm a hungry full stack web developer looking for work.</Text>
                     <Footer/>
                 </ImageBackground>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
       marginTop:5,
       backgroundColor: '#fff',
       alignItems: 'center',
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
       width:'100%',
       height:'100%' 
     }
