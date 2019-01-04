@@ -13,6 +13,7 @@ class ProjectsScreen extends Component{
         super()
         this.projects =[
             {
+                "key":1,
                 "title":'ChatterBox',
                 "description":`From the die-hard fanatics to the merely outspoken, ChatterBox is the central haven for all those passionate bout great television. Enter a live chat designated for your favorite television shows - as they’re airing - and free to speak your mind with other outspoken fans from all over the country! Don’t get lost in the fray with other social media sites. ChatterBox is designed to prioritize your interests and allows you the space to speak your mind.`,
                 "link":"https://sleepy-crag-37202.herokuapp.com/",
@@ -23,7 +24,7 @@ class ProjectsScreen extends Component{
     render(){
         return(
             <ImageBackground source={backgroundImage} style={styles.container}>
-                {this.projects.map(p=><View>
+                {this.projects.map(p=><View key={p.key}>
                     <Text style={{fontWeight:'bold', textAlign:'center'}}>{p.title}</Text>
                     <Text>{p.description}</Text>
                     <TouchableWithoutFeedback onPress={()=> Linking.openURL(p.link)}>

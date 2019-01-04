@@ -21,38 +21,47 @@ class SkillsScreen extends Component{
         super()
         this.skills = [
             {
+                "key":1,
                 "title":'HTML5',
                 "source": html5,
             },
             {
+                "key":2,
                 "title":'CSS3',
                 "source": css3,
             },
             {
+                "key":3,
                 "title":'JavaScript',
                 "source": js,
             },
             {
+                "key":4,
                 "title":'NodeJS',
                 "source": node,
             },
             {
+                "key":5,
                 "title":'React',
                 "source": react,
             },
             {
+                "key":6,
                 "title":'PostgreSQL',
                 "source": postgres,
             },
             {
+                "key":7,
                 "title":'GraphQL',
                 "source": graphql
             },
             {
+                "key":8,
                 "title":'Git',
                 "source": git,
             },
             {
+                "key":9,
                 "title":'Linux',
                 "source": ubuntu,
             },
@@ -62,10 +71,10 @@ class SkillsScreen extends Component{
         return(
             <ImageBackground source={backgroundImage} style={styles.container}>
                 <List>
-                    <ScrollView pinchGestureEnabled={true}>
+                    <ScrollView>
                         {
                             this.skills.map(s=>
-                                <View style={styles.listContainer}>
+                                <View style={styles.listContainer} key={s.key}>
                                     <Text style={{fontWeight:'bold'}}>{s.title}</Text>
                                     <Image source={s.source} style={{height:80, width:80}} />
                                 </View>    
