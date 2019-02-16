@@ -9,7 +9,7 @@
   background-image:url('./icons/background/code-coding-computer-574073.jpg');
   background-size:cover;
   height:100vh;
-  /* margin-bottom:0; */
+  margin-bottom:0;
 }
 
 .App .navigation{
