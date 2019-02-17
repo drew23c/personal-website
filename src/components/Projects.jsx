@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import chatter from '../videos/chatterbox.webm';
-import {Modal} from 'react-bootstrap';
+import tatrucking4junk from '../videos/tatrucking4junk.webm';
 import './styles/projects.css';
 
 
@@ -20,26 +20,30 @@ class Projects extends Component{
                 interests and allows you the space to speak your mind.`,
                 "link":"https://sleepy-crag-37202.herokuapp.com/",
                 "source":chatter
+            },
+            {
+                "title":'TA Trucking 4 Junk',
+                "description":`We buy junk cars for cash in the entire New York 
+                area. Sell your used or unwanted cars, trucks, SUVs, or vans and 
+                get paid on the spot. We don't just buy junk vehicles! We buy ANY 
+                condition vehicle with or without a title or keys.`,
+                "link":"https://www.tatrucking4junk.com",
+                "source":tatrucking4junk
             }
         ]
     }
     render(){
         return(
             <div className="projects">
-            <ul>
-                <li><Modal.Dialog>
-                    <Modal.Body>
-                    {this.projects.map(project =>
-                    <div>
-                    <h3>{project.title}</h3>
-                    <p className="project-description"><b>{project.description}</b></p>
-                    <a href={project.link} target="_blank"><video width="400px" height="200px" autoPlay control loop >
-                        <source src={project.source} />
-                    </video></a>
+                <ul>
+                {this.projects.map(project =><div>
+                        <h3>{project.title}</h3>
+                        <p className="project-description"><b>{project.description}</b></p>
+                        <a href={project.link} target="_blank"><video width="400px" height="200px" autoPlay control loop >
+                            <source src={project.source} />
+                        </video></a>
                     </div>)}
-                    </Modal.Body>
-                </Modal.Dialog></li>
-            </ul>
+                </ul>
             </div>
         )
     }

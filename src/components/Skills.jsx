@@ -8,6 +8,7 @@ import postgres from '../icons/icons8-postgresql-128.png';
 import node from '../icons/if_node_3069651.png';
 import git from '../icons/if_git-square_1608905.png';
 import ubuntu from '../icons/if_Ubuntu_367643.png';
+import reactNative from '../icons/reactNative.png';
 
 class Skills extends Component{
     constructor(){
@@ -45,6 +46,10 @@ class Skills extends Component{
                 "title":'Linux',
                 "source": ubuntu,
             },
+            {
+                "title":'React Native',
+                "source": reactNative
+            }
         ]
     }
 
@@ -55,7 +60,7 @@ class Skills extends Component{
                 {this.skills.map(skill =>
                 <li>
                     <img src={skill.source} alt={skill.title}/>
-                    <p>{skill.title}</p>
+                    <p className="title">{skill.title}</p>
                 </li>
                 )}
                 </ul>
