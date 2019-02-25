@@ -11,7 +11,7 @@ import Resume from './components/file/Andrew Caldwell electronic.pdf';
 const Home = () =>{
   return(
       <div>
-        <h2>{`I'm a hungry full stack web developer looking for work.`}</h2>
+        <h2>{`I'm a passionate technologist constantly learning to become better as a technician and a developer.`}</h2>
       </div>
   )
 }
