@@ -6,7 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
-import Resume from './components/file/Andrew Caldwell electronic.pdf';
+import Resume from './components/file/Andrew Caldwell resume.pdf';
 
 const Home = () =>{
   return(
