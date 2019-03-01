@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import chatter from '../videos/chatterbox.webm';
 import tatrucking4junk from '../videos/tatrucking4junk.webm';
+import nycGreenthumb from '../videos/nyc-greenthumb.webm';
 import './styles/projects.css';
 
 
@@ -29,8 +30,20 @@ class Projects extends Component{
                 condition vehicle with or without a title or keys.`,
                 "link":"https://www.tatrucking4junk.com",
                 "source":tatrucking4junk
+            },
+            {
+                "title":'NYC Greenthumb',
+                "description":`NYC has transformed vacant land into vibrant civic 
+                spaces that brings communities together. To find a community garden 
+                near you or explore other gardens in NYC please search through a list 
+                of 100 gardens.`,
+                "link":'https://safe-forest-76658.herokuapp.com/',
+                "source":nycGreenthumb
             }
         ]
+    }
+    componentDidMount(){
+        
     }
     render(){
         return(
