@@ -9,6 +9,7 @@ import node from '../icons/if_node_3069651.png';
 import git from '../icons/if_git-square_1608905.png';
 import ubuntu from '../icons/if_Ubuntu_367643.png';
 import reactNative from '../icons/reactNative.png';
+import powershell from '../icons/powershell.png';
 
 class Skills extends Component{
     constructor(){
@@ -39,6 +40,10 @@ class Skills extends Component{
                 "source": postgres,
             },
             {
+                "title":'Powershell',
+                "source": powershell
+            },
+            {
                 "title":'Git',
                 "source": git,
             },
@@ -59,8 +64,8 @@ class Skills extends Component{
                 <ul className="skills-list">
                 {this.skills.map(skill =>
                 <li>
-                    <img src={skill.source} alt={skill.title}/>
-                    <p className="title">{skill.title}</p>
+                    <img src={skill.source} alt={skill.title} />
+                    <h3 className="title">{skill.title}</h3>
                 </li>
                 )}
                 </ul>
