@@ -20,6 +20,7 @@ class Projects extends Component{
                 social media sites. ChatterBox is designed to prioritize your 
                 interests and allows you the space to speak your mind.`,
                 "link":"https://sleepy-crag-37202.herokuapp.com/",
+                "github":"https://github.com/drew23c/ChatterBox",
                 "source":chatter
             },
             {
@@ -29,6 +30,7 @@ class Projects extends Component{
                 get paid on the spot. We don't just buy junk vehicles! We buy ANY 
                 condition vehicle with or without a title or keys.`,
                 "link":"https://www.tatrucking4junk.com",
+                "github":"https://github.com/drew23c/cash4cars-1",
                 "source":tatrucking4junk
             },
             {
@@ -38,6 +40,7 @@ class Projects extends Component{
                 near you or explore other gardens in NYC please search through a list 
                 of 100 gardens.`,
                 "link":'https://safe-forest-76658.herokuapp.com/',
+                "github":"https://github.com/drew23c/NYC-Greenthumb",
                 "source":nycGreenthumb
             }
         ]
@@ -50,7 +53,7 @@ class Projects extends Component{
             <div className="projects">
                 <ul>
                 {this.projects.map(project =><div>
-                        <h3>{project.title}</h3>
+                        <a href={project.github} target="_blank"><h3>{project.title}</h3></a>
                         <p className="project-description"><b>{project.description}</b></p>
                         <a href={project.link} target="_blank"><video width="400px" height="200px" autoPlay control loop >
                             <source src={project.source} />
