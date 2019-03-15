@@ -3,6 +3,7 @@ import chatter from '../videos/chatterbox.webm';
 import tatrucking4junk from '../videos/tatrucking4junk.webm';
 import nycGreenthumb from '../videos/nyc-greenthumb.webm';
 import vcmobilesigningagent from '../videos/vcmobilesigningagent.webm';
+import fitnessfindernyc from '../videos/fitnessfindernyc.webm';
 import './styles/projects.css';
 
 
@@ -51,6 +52,14 @@ class Projects extends Component{
                 "link":'https://www.vcmobilesigningagent.com',
                 "github":'https://github.com/drew23c/notary',
                 "source":vcmobilesigningagent
+            },
+            {
+                "title":'Fitness Finder NYC',
+                "description":`Fitness Finder NYC is an app that locates gyms that are open and sorted
+                by user ratings. Looking for gym at 1am? Go on the app and view which ones are open. View
+                 on the map.`,
+                "github":'https://github.com/drew23c/Fitness-Finder-NYC',
+                "source":fitnessfindernyc
             }
         ]
     }
