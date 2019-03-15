@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import chatter from '../videos/chatterbox.webm';
 import tatrucking4junk from '../videos/tatrucking4junk.webm';
 import nycGreenthumb from '../videos/nyc-greenthumb.webm';
+import vcmobilesigningagent from '../videos/vcmobilesigningagent.webm';
 import './styles/projects.css';
 
 
@@ -42,6 +43,14 @@ class Projects extends Component{
                 "link":'https://safe-forest-76658.herokuapp.com/',
                 "github":"https://github.com/drew23c/NYC-Greenthumb",
                 "source":nycGreenthumb
+            },
+            {
+                "title":'VC Mobile Signing Agent',
+                "description":`VC Mobile Signing Agent travels to borrower's homes or 
+                office to complete loan documents for real estate, refinancing and modifications.`,
+                "link":'https://www.vcmobilesigningagent.com',
+                "github":'https://github.com/drew23c/notary',
+                "source":vcmobilesigningagent
             }
         ]
     }
