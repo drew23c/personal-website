@@ -13,11 +13,22 @@ video:hover{
     list-style: none;
 }
 .projects{
-    width:100vw;
+    width:100%;
 }
 .projects ul{
     display:flex;
     flex-direction: row;
     padding:0;
-    width:80vw;
+    width:90vw;
+}
+@media only screen and (max-width: 768px){
+    .projects{
+        width:100%;
+    }
+    .projects ul div{
+        display:flex;
+        flex-direction: row;
+        padding:0;
+        width:10vw;
+    }    
 }
