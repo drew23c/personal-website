@@ -1,14 +1,41 @@
 .skills{
     margin-top:5%;
-    height:70vh;
+    height:100vh;
 }
 .skills .skills-list{
     list-style: none;
 }
+.skills-list ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin:0 2% 0 2%;
+}
 .skills-list li{
     display:inline-block;
     margin:0 2% 0 2%;
+    width:10vw;
+}
+.skills-list li img{
+    width:10vw;
+}
+.skills-list li h3{
+    width:10vw;
 }
 .title{
     color:blue;
+}
+@media only screen and (max-width: 375px){
+    .skills-list li{
+        display:block;
+        margin:0 2% 0 2%;
+        width:10vw;
+    }    
+}
+@media only screen and (max-width: 414px){
+    .skills-list li{
+        display:block;
+        margin:0 2% 0 2%;
+        width:10vw;
+    }    
 }
