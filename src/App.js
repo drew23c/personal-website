@@ -2,19 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Link, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Resume from './components/file/Andrew Caldwell resume.pdf';
 
-const Home = () =>{
-  return(
-      <div className="home">
-        <h2>{`I'm a passionate technologist constantly learning to become better as a technician and a developer.`}</h2>
-      </div>
-  )
-}
 
 class App extends Component {
   render() {
