@@ -22,7 +22,7 @@ export default class Home extends Component{
                 <h2>{`I'm a passionate technologist constantly learning to become better as a technician and a developer.`}</h2>
                 <ul className="update">
                     <h2>Update</h2>
-                    {this.updates.map(u =><li><b>{u.date}</b><br/><p>{u.update}</p></li>)}<hr/>
+                    {this.updates.map(u =><li><b>{u.date}</b><br/><p>{u.update}</p></li>)}
                 </ul>
             </div>
         )
