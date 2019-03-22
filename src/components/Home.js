@@ -12,7 +12,8 @@ export default class Home extends Component{
             },
             {
                 date:"03/19/2019",
-                update:`Commissioned to help Grace Moravian Church redesign their website.`
+                update:`Commissioned to help Grace Moravian Church in Springfield 
+                Gardens, NY redesign their website.`
             }
         ]
     }
