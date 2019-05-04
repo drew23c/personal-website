@@ -4,6 +4,9 @@
     width:100%;
     padding-top:2%;
 }
+.footer img{
+    background-color:white !important;
+}
 .footer img:hover{
     color:rgb(166, 166, 248) !important;
 }

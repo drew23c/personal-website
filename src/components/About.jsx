@@ -5,7 +5,8 @@ class About extends Component{
 
     render(){
         return(
-            <div className="about">
+            <div className="about" id="about">
+            <h1>About</h1>
                 <p className="about-pitch"><b>{`This has undoubtedly been the most exciting time for me as someone 
                 who loves technology. Working as tech support, I wanted to 
                 do something more than entry level work, but I became complacent. It wasn't until a motivating conversation with my

@@ -6,10 +6,11 @@ import js from '../icons/if_code-programming-javascript-software-develop-command
 import react from '../icons/if_react_1296845.png';
 import postgres from '../icons/icons8-postgresql-128.png';
 import node from '../icons/if_node_3069651.png';
-import git from '../icons/if_git-square_1608905.png';
-import ubuntu from '../icons/if_Ubuntu_367643.png';
+import git from '../icons/Git-Icon-1788C.png';
+import ubuntu from '../icons/220px-Tux.png';
 import reactNative from '../icons/reactNative.png';
 import powershell from '../icons/powershell.png';
+import wordpress from '../icons/1-2-wordpress-logo-png-file.png'
 
 class Skills extends Component{
     constructor(){
@@ -54,13 +55,18 @@ class Skills extends Component{
             {
                 "title":'React Native',
                 "source": reactNative
+            },
+            {
+                "title":'WordPress',
+                "source": wordpress
             }
         ]
     }
 
     render(){
         return(
-            <div className="skills">
+            <div className="skills" id="skills">
+            <h1>Skills</h1>
                 <ul className="skills-list">
                 {this.skills.map(skill =>
                 <li>

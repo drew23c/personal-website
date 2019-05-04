@@ -5,10 +5,11 @@
 .App {
   text-align: center;
   font-family: 'PT Sans', sans-serif;
-  background-image:url('./icons/background/code-coding-computer-574073.jpg');
+  background-image:url('./icons/background/ales-nesetril-734016-unsplash.jpg');
   background-size:cover;
   margin-bottom:0;
   height:100%;
+  color:white;
 }
 
 .App .navigation{

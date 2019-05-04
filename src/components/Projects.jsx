@@ -5,6 +5,7 @@ import nycGreenthumb from '../videos/nyc-greenthumb.webm';
 import vcmobilesigningagent from '../videos/vcmobilesigningagent.webm';
 import fitnessfindernyc from '../videos/fitnessfindernyc.webm';
 import './styles/projects.css';
+import {Link, Switch, Route} from 'react-router-dom';
 
 
 class Projects extends Component{
@@ -12,6 +13,7 @@ class Projects extends Component{
         super()
         this.projects =[
             {
+                "id":1,
                 "title":'ChatterBox',
                 "description":`From the die-hard fanatics to the merely outspoken, 
                 ChatterBox is the central haven for all those passionate 
@@ -26,6 +28,7 @@ class Projects extends Component{
                 "source":chatter
             },
             {
+                "id":2,
                 "title":'TA Trucking 4 Junk',
                 "description":`We buy junk cars for cash in the entire New York 
                 area. Sell your used or unwanted cars, trucks, SUVs, or vans and 
@@ -36,6 +39,7 @@ class Projects extends Component{
                 "source":tatrucking4junk
             },
             {
+                "id":3,
                 "title":'NYC Greenthumb',
                 "description":`NYC has transformed vacant land into vibrant civic 
                 spaces that brings communities together. To find a community garden 
@@ -46,6 +50,7 @@ class Projects extends Component{
                 "source":nycGreenthumb
             },
             {
+                "id":4,
                 "title":'VC Mobile Signing Agent',
                 "description":`VC Mobile Signing Agent travels to borrower's homes or 
                 office to complete loan documents for real estate, refinancing and modifications.`,
@@ -54,6 +59,7 @@ class Projects extends Component{
                 "source":vcmobilesigningagent
             },
             {
+                "id":5,
                 "title":'Fitness Finder NYC',
                 "description":`Fitness Finder NYC is an app that locates gyms that are open and sorted
                 by user ratings. Looking for gym at 1am? Go on the app and view which ones are open. View
@@ -63,20 +69,18 @@ class Projects extends Component{
             }
         ]
     }
-    componentDidMount(){
-        
-    }
     render(){
         return(
-            <div className="projects">
+            <div className="projects" id="projects">
                 <ul>
-                {this.projects.map(project =><div>
+                <h1>Projects</h1>
+                {this.projects.map(project =><li className="project-list">
                         <a href={project.github} target="_blank"><h3>{project.title}</h3></a>
                         <p className="project-description"><b>{project.description}</b></p>
                         <a href={project.link} target="_blank"><video width="400px" height="200px" autoPlay control loop >
                             <source src={project.source} />
                         </video></a>
-                    </div>)}
+                    </li>)}
                 </ul>
             </div>
         )

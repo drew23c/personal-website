@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './styles/home.css';
 
-export default class Home extends Component{
+export default class Updates extends Component{
     constructor(){
         super()
         this.updates = [
@@ -19,7 +19,7 @@ export default class Home extends Component{
     }
     render(){
         return(
-            <div className="home">
+            <div className="updates">
                 <h2>{`I'm a passionate technologist constantly learning to become better as a technician and a developer.`}</h2>
                 <ul className="update">
                     <h2>Update</h2>
