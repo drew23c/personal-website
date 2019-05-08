@@ -1,5 +1,5 @@
 .update{
-    width:40vw;
+    width:20vw;
     height:40%;
     border: 2px solid black;
     margin-left:5%;
@@ -15,4 +15,9 @@
 .update h2{
     text-align: center;
     margin-bottom:3%;
+}
+@media only screen and (max-width: 375px){
+    .update{
+        width:60vw;
+    }    
 }
