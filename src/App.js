@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Updates from './components/Updates';
 import Footer from './components/Footer';
+import FBBadge from './components/FB Badge/FBBadge';
 import Resume from './components/file/Andrew Caldwell resume.pdf';
 
 
@@ -24,7 +25,8 @@ class App extends Component {
             <Link to="#skills">Skills</Link>
           </nav>
         </div>
-        <Updates/>
+        {/* <Updates/> */}
+        <FBBadge/>
         <About/>
         <Projects/>
         <Skills/>
