@@ -4,6 +4,7 @@ import tatrucking4junk from '../videos/tatrucking4junk.webm';
 import nycGreenthumb from '../videos/nyc-greenthumb.webm';
 import vcmobilesigningagent from '../videos/vcmobilesigningagent.webm';
 import fitnessfindernyc from '../videos/fitnessfindernyc.webm';
+import gracemoravianchurch from '../videos/Grace Moravian Church.png';
 import './styles/projects.css';
 import {Link, Switch, Route} from 'react-router-dom';
 
@@ -66,6 +67,20 @@ class Projects extends Component{
                  on the map.`,
                 "github":'https://github.com/drew23c/Fitness-Finder-NYC',
                 "source":fitnessfindernyc
+            },
+            {
+                "id":6,
+                "title": "Grace Moravian Church",
+                "description":`It is indeed an honor to welcome you to the cyber community of Grace Moravian Church, 
+                Springfield Gardens. Grace has developed a reputation of being God’s vessel of grace through her great 
+                hospitality; wonderful fellowship; and warm expressions of love to all those with whom we interact. We 
+                encourage you to surf the various links and pages and discover the exciting ministries in which we are engaged. 
+                We are located in the quiet neighborhood of Springfield Gardens and it is in and through this community that we 
+                seek to live out the mission to which God has called us. We invite you to join us in any of our many weekly activities
+                 as you make Grace the place for you to be!`,
+                "link":'http://gracemoravianchurchny.org/',
+                "WordPress":"WordPress",
+                "source": gracemoravianchurch
             }
         ]
     }
